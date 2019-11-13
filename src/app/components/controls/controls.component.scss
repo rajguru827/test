@@ -1,10 +1,37 @@
+
 #controls {
-    .mat-button-toggle .mat-button-toggle-button {
-        line-height: 26px;
-        font-size: 12px;
-        color: #4E5260;
-    }
     .mat-button-toggle-group-appearance-standard {
+        border: 1px solid #7E8499;
         border-radius: 6px;
+    }
+    .mat-button-toggle-group-appearance-standard .mat-button-toggle+.mat-button-toggle {
+        border-left: 1px solid #7E8499;
+    }    
+    
+    .btn-sm {
+        ::ng-deep .mat-button-toggle-label-content {
+            line-height: 26px;
+            font-size: 12px;
+            color: #4E5260;
+        }
+    }
+    .btn-md {
+        ::ng-deep .mat-button-toggle-label-content {
+            line-height: 36px;
+            font-size: 12px;
+            color: #4E5260;
+        }
+    }
+    .mat-button-toggle-checked {
+        background: #7E8499;        
+        ::ng-deep .mat-button-toggle-label-content {
+            color: #ffffff;
+        }
+    }
+    .mat-button-toggle.hover{
+        background: #4E5260;
+        ::ng-deep .mat-button-toggle-label-content {
+            color: #ffffff;
+        }
     }
 }
